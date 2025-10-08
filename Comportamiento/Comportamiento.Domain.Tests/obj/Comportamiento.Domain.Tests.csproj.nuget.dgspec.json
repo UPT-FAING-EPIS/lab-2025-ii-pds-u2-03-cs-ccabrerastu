@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain.Tests\\Comportamiento.Domain.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain.Tests\\Comportamiento.Domain.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain.Tests\\Comportamiento.Domain.Tests.csproj",
+        "projectName": "Comportamiento.Domain.Tests",
+        "projectPath": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain.Tests\\Comportamiento.Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\kbrera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kbrera\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain\\Comportamiento.Domain.csproj": {
+                "projectPath": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain\\Comportamiento.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain\\Comportamiento.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain\\Comportamiento.Domain.csproj",
+        "projectName": "Comportamiento.Domain",
+        "projectPath": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain\\Comportamiento.Domain.csproj",
+        "packagesPath": "C:\\Users\\kbrera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kbrera\\Desktop\\lab-2025-ii-pds-u2-03-cs-ccabrerastu\\Comportamiento\\Comportamiento.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kbrera\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

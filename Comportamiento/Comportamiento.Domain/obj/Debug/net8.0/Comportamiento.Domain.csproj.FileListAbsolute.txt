@@ -1,0 +1,12 @@
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\bin\Debug\net8.0\Comportamiento.Domain.deps.json
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\bin\Debug\net8.0\Comportamiento.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\bin\Debug\net8.0\Comportamiento.Domain.pdb
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.AssemblyInfoInputs.cache
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.AssemblyInfo.cs
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.sourcelink.json
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\refint\Comportamiento.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\Comportamiento.Domain.pdb
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Comportamiento\Comportamiento.Domain\obj\Debug\net8.0\ref\Comportamiento.Domain.dll

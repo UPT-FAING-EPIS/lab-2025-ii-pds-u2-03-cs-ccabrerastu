@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comportamiento.Domain", "Comportamiento.Domain\Comportamiento.Domain.csproj", "{D63F08DF-BC1C-4917-A01E-013C57CF0BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comportamiento.Domain.Tests", "Comportamiento.Domain.Tests\Comportamiento.Domain.Tests.csproj", "{119FD753-F25F-4F18-8B5C-24F697F87848}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D63F08DF-BC1C-4917-A01E-013C57CF0BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63F08DF-BC1C-4917-A01E-013C57CF0BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63F08DF-BC1C-4917-A01E-013C57CF0BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63F08DF-BC1C-4917-A01E-013C57CF0BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119FD753-F25F-4F18-8B5C-24F697F87848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119FD753-F25F-4F18-8B5C-24F697F87848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119FD753-F25F-4F18-8B5C-24F697F87848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119FD753-F25F-4F18-8B5C-24F697F87848}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.deps.json
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.pdb
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.AssemblyInfoInputs.cache
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.AssemblyInfo.cs
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.sourcelink.json
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\refint\Payment.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.pdb
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\Payment\Payment.Domain\obj\Debug\net8.0\ref\Payment.Domain.dll

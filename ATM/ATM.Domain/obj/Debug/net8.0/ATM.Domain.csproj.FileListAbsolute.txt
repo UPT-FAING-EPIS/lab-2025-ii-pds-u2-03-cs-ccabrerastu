@@ -1,0 +1,12 @@
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.deps.json
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.pdb
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.AssemblyInfoInputs.cache
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.AssemblyInfo.cs
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.sourcelink.json
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\refint\ATM.Domain.dll
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.pdb
+C:\Users\kbrera\Desktop\lab-2025-ii-pds-u2-03-cs-ccabrerastu\ATM\ATM.Domain\obj\Debug\net8.0\ref\ATM.Domain.dll
