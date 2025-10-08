@@ -2,10 +2,19 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+# Bienvenido a la documentación del repositorio
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+Este sitio contiene la documentación técnica:
 
-## Quick Start Notes:
+- **ATM**: Simulación de operaciones bancarias y cajero automático.
+- **Payment**: Estrategias y procesamiento de pagos.
 
-1. Add images to the *images* folder if the file is referencing an image.
+## ATM
+
+- [Diagrama de Clases ATM](ATM/disenio.md)
+- [API ATM](api/ATM.Domain/ATM.Domain.html)
+
+## Payment
+
+- [Diagrama de Clases Payment](Payment/disenio.md)
+- [API Payment](api/Payment.Domain/Payment.Domain.html)
