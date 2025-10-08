@@ -116,7 +116,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | ATM & Payment App",
-    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+    "title": "Bienvenido a la documentación del repositorio | ATM & Payment App",
+    "summary": "Bienvenido a la documentación del repositorio Este sitio contiene la documentación técnica: ATM: Simulación de operaciones bancarias y cajero automático. Payment: Estrategias y procesamiento de pagos. ATM Diagrama de Clases ATM API ATM Payment Diagrama de Clases Payment API Payment"
   }
 }
