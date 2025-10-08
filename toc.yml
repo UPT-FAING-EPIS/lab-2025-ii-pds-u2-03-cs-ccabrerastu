@@ -1,0 +1,14 @@
+- name: Inicio
+  href: index.md
+- name: ATM
+  items:
+    - name: Diagrama de Clases
+      href: ATM/disenio.md
+    - name: API ATM
+      href: /api/ATM.Domain/toc.html
+- name: Payment
+  items:
+    - name: Diagrama de Clases
+      href: Payment/disenio.md
+    - name: API Payment
+      href: /api/Payment.Domain/toc.html

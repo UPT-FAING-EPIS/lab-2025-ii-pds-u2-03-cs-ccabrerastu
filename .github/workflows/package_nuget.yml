@@ -1,0 +1,80 @@
+name: Actividad02 - PackageNuget
+
+env:
+  DOTNET_VERSION: '8.0'
+
+on: push
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore dependencies & Build solutions
+        run: |
+          dotnet restore ATM/ATM.sln
+          dotnet restore Payment/Payment.sln
+          dotnet build ATM/ATM.sln --configuration Release
+          dotnet build Payment/Payment.sln --configuration Release
+
+      - name: Run unit tests and collect results (ATM)
+        run: |
+          dotnet test ATM/ATM.Domain.Tests/ATM.Domain.Tests.csproj --configuration Release --logger trx --results-directory ATM/TestResults
+
+      - name: Run unit tests and collect results (Payment)
+        run: |
+          dotnet test Payment/Payment.Domain.Tests/Payment.Domain.Tests.csproj --configuration Release --logger trx --results-directory Payment/TestResults
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            ATM/TestResults
+            Payment/TestResults
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      - name: Pack nuget package (ATM.Domain)
+        run: |
+          dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -c Release \
+            -p:PackageVersion=2025.1001.${{ github.run_number }} \
+            -p:RepositoryUrl=https://github.com/${{ github.repository }} \
+            -p:RepositoryType=git
+
+      - name: Pack nuget package (Payment.Domain)
+        run: |
+          dotnet pack Payment/Payment.Domain/Payment.Domain.csproj -c Release \
+            -p:PackageVersion=2025.1001.${{ github.run_number }} \
+            -p:RepositoryUrl=https://github.com/${{ github.repository }} \
+            -p:RepositoryType=git
+
+      - name: nuget sources
+        run: dotnet nuget list source
+
+      - name: Push nuget package to GitHub Packages (ATM.Domain)
+        run: |
+          dotnet nuget push ATM/ATM.Domain/bin/Release/*.nupkg --skip-duplicate --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push nuget package to GitHub Packages (Payment.Domain)
+        run: |
+          dotnet nuget push Payment/Payment.Domain/bin/Release/*.nupkg --skip-duplicate --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }

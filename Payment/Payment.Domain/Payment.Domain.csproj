@@ -4,6 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Payment_ccabrerastu</PackageId>
+    <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-03-cs-ccabrerastu</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-03-cs-ccabrerastu</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>

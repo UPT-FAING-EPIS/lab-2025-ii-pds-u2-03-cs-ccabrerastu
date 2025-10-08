@@ -1,0 +1,39 @@
+name: Actividad01 - Publish DocFX Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-publish-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install DocFX
+        run: dotnet tool install -g docfx
+
+      - name: Restore and build solutions
+        run: |
+          dotnet build ATM/ATM.sln
+          dotnet build Payment/Payment.sln
+
+      - name: Generate DocFX metadata
+        run: docfx metadata docfx.json
+
+      - name: Build DocFX site
+        run: docfx build docfx.json
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site

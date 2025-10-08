@@ -1,0 +1,63 @@
+name: Actividad03 - ReleaseVersion
+
+env:
+  DOTNET_VERSION: '8.0'
+
+on:
+  push:
+    tags:
+      - 'v*' # Solo cuando se crean tags de versión
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Extract version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+
+      - name: Build ATM
+        run: |
+          dotnet restore ATM/ATM.sln
+          dotnet build ATM/ATM.sln --configuration Release --no-restore
+
+      - name: Build Payment
+        run: |
+          dotnet restore Payment/Payment.sln
+          dotnet build Payment/Payment.sln --configuration Release --no-restore
+
+      - name: Run unit tests ATM
+        run: |
+          dotnet test ATM/ATM.Domain.Tests/ATM.Domain.Tests.csproj --configuration Release --no-build
+
+      - name: Run unit tests Payment
+        run: |
+          dotnet test Payment/Payment.Domain.Tests/Payment.Domain.Tests.csproj --configuration Release --no-build
+
+      - name: Pack ATM.Domain
+        run: |
+          dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -c Release \
+            --no-build \
+            -p:PackageVersion=${{ steps.get_version.outputs.VERSION }} \
+            -o ./artifacts
+
+      - name: Pack Payment.Domain
+        run: |
+          dotnet pack Payment/Payment.Domain/Payment.Domain.csproj -c Release \
+            --no-build \
+            -p:PackageVersion=${{ steps.get_version.outputs.VERSION }} \
+            -o ./artifacts
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: "artifacts/*.nupkg"
+          generate_release_notes: true
