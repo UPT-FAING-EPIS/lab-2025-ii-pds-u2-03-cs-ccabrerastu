@@ -3,9 +3,7 @@ name: Actividad02 - PackageNuget
 env:
   DOTNET_VERSION: '8.0'
 
-on:
-  push:
-  workflow_dispatch:
+on: push
 
 jobs:
   release:
@@ -56,33 +54,27 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-      - name: Pack NuGet package (ATM.Domain)
+      - name: Pack nuget package (ATM.Domain)
         run: |
           dotnet pack ATM/ATM.Domain/ATM.Domain.csproj -c Release \
             -p:PackageVersion=2025.1001.${{ github.run_number }} \
             -p:RepositoryUrl=https://github.com/${{ github.repository }} \
             -p:RepositoryType=git
 
-      - name: Pack NuGet package (Payment.Domain)
+      - name: Pack nuget package (Payment.Domain)
         run: |
           dotnet pack Payment/Payment.Domain/Payment.Domain.csproj -c Release \
             -p:PackageVersion=2025.1001.${{ github.run_number }} \
             -p:RepositoryUrl=https://github.com/${{ github.repository }} \
             -p:RepositoryType=git
 
-      - name: List NuGet sources
+      - name: nuget sources
         run: dotnet nuget list source
 
-      - name: Push NuGet package to GitHub Packages (ATM.Domain)
+      - name: Push nuget package to GitHub Packages (ATM.Domain)
         run: |
-          dotnet nuget push ATM/ATM.Domain/bin/Release/*.nupkg \
-            --skip-duplicate \
-            --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
-            --api-key ${{ secrets.GITHUB_TOKEN }}
+          dotnet nuget push ATM/ATM.Domain/bin/Release/*.nupkg --skip-duplicate --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push NuGet package to GitHub Packages (Payment.Domain)
+      - name: Push nuget package to GitHub Packages (Payment.Domain)
         run: |
-          dotnet nuget push Payment/Payment.Domain/bin/Release/*.nupkg \
-            --skip-duplicate \
-            --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" \
-            --api-key ${{ secrets.GITHUB_TOKEN }}
+          dotnet nuget push Payment/Payment.Domain/bin/Release/*.nupkg --skip-duplicate --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }}
